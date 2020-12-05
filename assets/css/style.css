@@ -89,9 +89,8 @@ body{
  }
  .hero-subtitle{
      background-color: var(--teal);
-     background-color: var(--teal);
     align-items: flex-end;
-    margin: 20px 20px;
+    margin: 20px 20px 20px 1175px;
     font-size: 20px;
     padding: 5px 5px;
  }
