@@ -1,32 +1,119 @@
 *{
     margin:0;
     padding:0;
-    box-sizing:border-box ;
-    
+
+}
+:root{
+    --teal:#67c8f5;
+    --grey:#404147;
 }
 
 body{
-    color: grey;
-    font-family: Helvetica, Arial, sans-serif;
+    color: var(--grey);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;    margin:0;
+    padding:0;
 
 }
 /* header styling start */
  header {
-    padding: 20px 35px;
-    background-color: grey;
-    display:flex;
-    justify-content: space-between;
+     display:flex;
+    background-color:var(--grey);
     flex-wrap:wrap;
     position:-webkit-sticky;
     position: sticky;
-    top: 0;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-position: 80%;
-    z-index:9999;
- }
- .header{
+    width :100%;
+    justify-content: space-between;
+    padding:10px 0 5px 0;
 
  }
+ 
+ header h1 {
+     display:flex;
+    background-color:var(--teal);
+    width:300px;
+    height: 100%;
+    
+    
+    
+ }
+ header h1 a{
+     padding-left: 11%;
+     width: 350px;
+ }
+ header nav{
+
+    display:flex;
+    padding:0;
+    width: 50%;
+    justify-content: flex-end;
+    margin-right:30px;
+ }
+ header nav ul {
+    display:flex;
+    padding:0;
+    justify-content: flex-end;
+    list-style: none;
+    
+  }
+ header nav ul li{
+    margin:10px;
+}
+
+
+ header nav ul li a{
+    
+    font-size: 1.55vw;
+    color :var(--teal);
+    display:flex;
+    width: auto;
+    
+    }
+   
  /* header styling ends */
+
+
+ /* start of hero styling */
+ .hero{
+ background-image: url("../images/headerportfolio.jpg");
+    height: 400px;
+    background-size:cover;
+    background-position: center;
+    position:relative;
+    display:flex;
+    flex-wrap:wrap;
+    justify-items: flex-end;
+    align-items:flex-end;
+    background-attachment: relative;
+    background-position: 100%;
+    
+ }
+ .hero-subtitle{
+     background-color: var(--teal);
+     background-color: var(--teal);
+    align-items: flex-end;
+    margin: 20px 20px;
+    font-size: 20px;
+    padding: 5px 5px;
+ }
+ /* end */
+ /* start of about me section */
+ .about-me{
+     display:flex;
+     flex-wrap: wrap;
+     
+ }
+ .about-me h1{
+     border-right:5px;
+
+ }
+ 
+ /* end */
+
+ /* grid */
+ .container .grid-item {
+     display:grid;
+    grid-template-columns: 100px 50px 100px;
+    grid-template-rows: 80px auto 80px; 
+    column-gap: 10px;
+    row-gap: 15px;
+ }
