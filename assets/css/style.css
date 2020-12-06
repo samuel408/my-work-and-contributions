@@ -124,12 +124,11 @@ body{
 } 
  /* end */
 
- /* grid */
+ /* start of work section*/
  .work{
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
-    
 }
 .work h1{
     font-size:50px;
@@ -141,14 +140,52 @@ body{
    padding-left:20px;
    border-left: 3px solid;
    border-color: var(--grey);
+   display:grid;
 } 
  .container .grid-item {
      display:grid;
-    grid-template-columns: 100px 50px 100px;
-    grid-template-rows: 80px auto 80px; 
+    grid-template-columns: 100px 50px 100px 50px;
     column-gap: 10px;
     row-gap: 15px;
+    background-size: cover;
  }
+ .label{
+     margin-top: 100px;
+     background-color: var(--teal);
+     width:125px;
+     margin-bottom: 30px;
+
+ }
+ .label h4{
+     padding:5px ;
+     padding-bottom: 0;
+     width:125px;
+ }
+ .label p{
+     padding-left:5px;
+     font-size: small;
+ }
+ .item-1{
+     background-image: url(../images/horiseon.jpg);
+ }
+ .item-2{
+     background-image: url(../images/runbuddy.jpg);
+ }
+ .item-3{
+     background-image: url(../images/commingsoon1.jpeg);
+ }
+ .item-4{
+    
+     background-image: url(../images/comingsoon2.jpeg);
+    }
+ .item-5{
+     
+     background-image: url(../images/comingsoon.jpeg);
+}
+ /* end of work section  */
+
+
+
  /* footer section */
  footer{
     display:flex;
@@ -170,14 +207,7 @@ footer nav{
   
    height: 100px;
 }  
-/* header nav{
 
-    display:flex;
-    padding:0;
-    width: 50%;
-    justify-content: flex-end;
-    margin-right:30px;
- } */
  footer nav ul {
     display:flex;
     padding:0;
