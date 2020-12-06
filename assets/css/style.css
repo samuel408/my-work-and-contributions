@@ -1,7 +1,6 @@
 *{
     margin:0;
     padding:0;
-
 }
 :root{
     --teal:#67c8f5;
@@ -21,10 +20,13 @@ body{
     flex-wrap:wrap;
     position:-webkit-sticky;
     position: sticky;
+    top: 0;
     width :100%;
     justify-content: space-between;
     padding:10px 0 5px 0;
-
+    background-attachment: fixed;
+    z-index: 9999;
+    padding-top: 10px;
  }
  
  header h1 {
@@ -99,16 +101,40 @@ body{
  .about-me{
      display:flex;
      flex-wrap: wrap;
+     justify-content: center;
      
  }
  .about-me h1{
-     border-right:5px;
-
+     font-size:50px;
+     margin-top: 15px;
+     
  }
- 
+ .about-me p{
+    margin: 20px;
+    padding-left:20px;
+    border-left: 3px solid;
+    border-color: var(--grey);
+} 
  /* end */
 
  /* grid */
+ .work{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.work h1{
+    font-size:50px;
+    margin-top: 15px;
+    
+}
+.work .container{
+   margin: 20px;
+   padding-left:20px;
+   border-left: 3px solid;
+   border-color: var(--grey);
+} 
  .container .grid-item {
      display:grid;
     grid-template-columns: 100px 50px 100px;
